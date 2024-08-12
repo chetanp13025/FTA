@@ -22,6 +22,10 @@ public class Fta_web extends Properties{
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("abhiasm1@yopmail.com");
 	driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("blubirch123");
-	driver.findElement(By.tagName("//ion-button[@class='footer md button button-block button-solid ion-activatable ion-focusable hydrated']")).click();
-}
+	driver.findElement(By.xpath("//ion-button[@class='footer md button button-block button-solid ion-activatable ion-focusable hydrated']")).click();
+	driver.findElement(By.xpath("//ion-router-outlet [@class='hydrated']")).click();
+	driver.findElement(By.xpath("(//ion-col[@class='md hydrated'])[4]")).click();
+	driver.findElement(By.xpath("(//div [.='Create Tour Plan'])[1]")).click();
+	
+	}
 }
